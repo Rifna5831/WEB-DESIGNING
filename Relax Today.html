@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relax Spa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9); /* light background for visibility */
+      padding: 20px 60px;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      gap: 40px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #0077cc;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image: url('https://images6.alphacoders.com/685/685647.jpg'); /* Sample spa image */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding-top: 80px; /* space for fixed header */
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
+    }
+
+    .hero-text {
+      color: white;
+    }
+
+    .hero-text h1 {
+      font-size: 64px;
+      line-height: 1.2;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #dcdcdc;
+      padding: 12px 24px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .discount {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="overlay">
+      <div class="hero-text">
+        <h1>GET IN<br>RELAX<br>TODAY</h1>
+        <a href="#" class="btn">JOIN NOW →</a>
+        <p class="discount">25% Discount on first month!</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
